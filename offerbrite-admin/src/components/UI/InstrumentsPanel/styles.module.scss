@@ -1,0 +1,10 @@
+@import '../../../resources.scss';
+
+.InstrumentsPanel {
+  display: flex;
+  margin-top: $contentMarginTop;
+
+  & > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

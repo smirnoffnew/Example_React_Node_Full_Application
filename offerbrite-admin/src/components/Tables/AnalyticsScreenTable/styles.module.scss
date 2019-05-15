@@ -1,0 +1,19 @@
+@import '../../../resources.scss';
+
+.Table {
+  @include fullWidthWithMin($graphMinWidth);
+  margin-top: $contentMarginTop;
+  @include backgroundWhite;
+  @include borderLight;
+  @include borderRadius;
+
+  &__header {
+    @include fullWidthWithMin($graphMinWidth);
+    @include flexBetweenCenter;
+    @include graphPadding;
+  }
+
+  &__header__text {
+    @include graphHeaderFont;
+  }
+}

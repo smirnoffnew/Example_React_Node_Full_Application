@@ -1,0 +1,56 @@
+@import '../../../resources.scss';
+
+.Button {
+  min-width: 14.5rem;
+  padding: 13px 18px;
+  text-align: center;
+  color: $colorWhite;
+  @include fontSize(lg);
+  outline: none;
+  border: 0;
+  @include borderRadiusLight;
+  @include transition;
+  cursor: pointer;
+
+  &_block {
+    width: 100%;
+  }
+
+  &_blue {
+    background-color: $colorPrimary;
+
+    &:hover {
+      background-color: $colorPrimaryMedium;
+    }
+
+    &:active {
+      background-color: $colorPrimaryLight;
+    }
+  }
+
+  &_orange {
+    background-color: $colorSecondary;
+
+    &:hover {
+      background-color: $colorSecondaryMedium;
+    }
+
+    &:active {
+      background-color: $colorSecondaryLight;
+    }
+  }
+
+  &_disabled {
+    background-color: $colorGray;
+    color: $colorGrayMedium;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $colorGray;
+    }
+
+    &:active {
+      background-color: $colorGray;
+    }
+  }
+}

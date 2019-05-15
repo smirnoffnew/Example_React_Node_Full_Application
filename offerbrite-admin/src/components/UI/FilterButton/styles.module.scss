@@ -1,0 +1,20 @@
+@import '../../../resources.scss';
+
+.Button {
+  width: 150px;
+  height: 48px;
+  @include flexCenter;
+  @include borderRadiusLight;
+  background-color: $colorGray;
+  @include transition;
+  outline: none;
+  @include borderLight;
+  color: $colorGrayDark;
+
+  &_active {
+    border: 1px solid $colorPink;
+    @include backgroundWhite;
+    color: $colorPink;
+    cursor: pointer;
+  }
+}

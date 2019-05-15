@@ -1,0 +1,19 @@
+@import '../../resources.scss';
+
+.Checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  flex-shrink: 1;
+  &__box {
+    @include fontSize(xl);
+    color: $colorPrimary;
+    margin-bottom: -2px;
+  }
+  
+  &__label {
+    @include graphPadding;
+    @include fontSize(md);
+  }
+}

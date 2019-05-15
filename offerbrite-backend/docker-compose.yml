@@ -1,0 +1,91 @@
+version: '3'
+
+services:
+  mongo:
+    image: 'mongo'
+    volumes:
+    - './data:/data/db'
+    expose:
+    - '27017'
+
+  redis:
+    image: 'redis'
+    command: redis-server --requirepass secret
+    expose:
+    - '6379'
+    ports:
+    - '1234:6379'
+    volumes:
+    - redis_data:/data
+  offerbrite-be:
+    build:
+      context: ./
+    volumes:
+    - ./public:/app/public
+    # Mounts logs directory
+    - ./logs:/app/logs
+    # Mounts the project directory on the host to /app inside the container,
+    # allowing you to modify the code without having to rebuild the image.
+    - ./:/app
+    - ./bin/:/app/bin
+    # Just specify a path and let the Engine create a volume.
+    # Data present in the base image at the specified mount point will be copied
+    # over to the new volume upon volume initialization.
+    # node_modules from this new volume will be used and not from your local dev env.
+    - /app/node_modules/
+    # Expose ports [HOST:CONTAINER}
+    ports:
+    - '4040:4040'
+    # Set environment variables from this file
+    env_file:
+    - .env
+
+    # Overwrite any env var defined in .env file (if required)
+    environment:
+    - MONGO_HOST=mongodb://mongo:27017/offerbrite
+    - REDIS_URL=redis://redis:6379
+    - REDIS_PSW=secret
+    # Link to containers in another service.
+    # Links also express dependency between services in the same way as depends_on,
+    # so they determine the order of service startup.
+    depends_on:
+    - redis
+    - mongo
+    links:
+    - mongo
+  offerbrite-cleaner:
+    build:
+      context: ./
+      dockerfile: Dockerfile.cron
+    volumes:
+    # Mounts logs directory
+    - ./logs-cleaner:/app/logs
+    # Mounts the project directory on the host to /app inside the container,
+    # allowing you to modify the code without having to rebuild the image.
+    - ./:/app
+    - ./bin/:/app/bin
+    # Just specify a path and let the Engine create a volume.
+    # Data present in the base image at the specified mount point will be copied
+    # over to the new volume upon volume initialization.
+    # node_modules from this new volume will be used and not from your local dev env.
+    - /app/node_modules/
+    # Set environment variables from this file
+    env_file:
+    - .env
+
+    # Overwrite any env var defined in .env file (if required)
+    environment:
+    - MONGO_HOST=mongodb://mongo:27017/offerbrite
+    - REDIS_URL=redis://redis:6379
+    - REDIS_PSW=secret
+    # Link to containers in another service.
+    # Links also express dependency between services in the same way as depends_on,
+    # so they determine the order of service startup.
+    depends_on:
+    - redis
+    - mongo
+    links:
+    - mongo
+volumes:
+  redis_data:
+    driver: local

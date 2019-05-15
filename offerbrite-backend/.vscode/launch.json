@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["debug"],
+      "port": 9229,
+      "env": { "DEBUG": "app:*", "NODE_ENV": "development" },
+      "console": "internalConsole"
+    },
+    {
+      "name": "mocha debug",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/mocha/bin/mocha",
+      "args": [
+        "${file}",
+        "--no-timeouts",
+        "--inspect-brk",
+        "--opts",
+        "${workspaceFolder}/test/mocha.opts"
+      ],
+      "env": { "DEBUG": "app:*", "NODE_ENV": "test" },
+      "console": "internalConsole"
+    }
+  ]
+}

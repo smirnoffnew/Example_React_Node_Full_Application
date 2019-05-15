@@ -1,0 +1,102 @@
+@import '../../../resources.scss';
+
+.Dropdown {
+  position: relative;
+  @include backgroundWhite;
+  cursor: pointer;
+  height: 100%;
+  @include fontSize(md);
+  
+  &_small {
+    @include fontSize(sm);
+  }
+
+  &__label {
+    @include fontSize(xs);
+    color: $colorGrayMedium;
+    margin-bottom: 5px;
+  }
+
+  &__icon {
+    color: inherit;
+    @include fontSize(lg);
+  }
+
+  &__icon__wrapper {
+    @include flexCenter;
+    @include transition;
+
+    &_rotated {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__row_first {
+    min-width: 255px;
+    min-height: 48px;
+    @include flexBetweenCenter;
+    padding: 0 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    @include transition;
+
+    &_small {
+      min-width: 180px;
+      min-height: 36px;
+    }
+
+    &:hover {
+      background-color: $colorGrayLight;
+    }
+
+    &_opened {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border: 1px solid $colorPrimaryMedium;
+    }
+
+    &_closed {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      @include borderLight;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    max-height: 240px;
+    @include backgroundWhite;
+    border-left: 1px solid $colorGray;
+    border-right: 1px solid $colorGray;
+    border-bottom: 1px solid $colorGray;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    @include transition;
+
+    &_closed {
+      height: 0;
+      border: 0;
+    }
+  }
+
+  &__list__item {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    @include transition;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $colorGrayLight;
+    }
+
+    &:hover {
+      background-color: $colorGrayLight;
+    }
+  }
+}

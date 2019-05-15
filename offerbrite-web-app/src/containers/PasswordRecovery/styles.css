@@ -1,0 +1,21 @@
+.PasswordRecovery {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.PasswordRecovery__logo {
+  height: 8rem;
+}
+
+.PasswordRecovery__title {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.PasswordRecovery__intro {
+  font-size: 1.25rem;
+  font-weight: 300;
+}

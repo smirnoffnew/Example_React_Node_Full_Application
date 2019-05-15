@@ -1,0 +1,15 @@
+import createTypes from '@/services/helpers/createTypes';
+
+export default createTypes(`
+  GET_USER_LOCATION_START
+  GET_USER_LOCATION_SUCCESS
+  GET_USER_LOCATION_FAIL
+
+  SET_USER_LOCATION_START
+  SET_USER_LOCATION_SUCCESS
+  SET_USER_LOCATION_FAIL
+
+  EDIT_USER_ADDRESS
+
+  ERASE_LOCATION
+`);

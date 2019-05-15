@@ -1,0 +1,26 @@
+@import '../../resources.scss';
+
+.Datepicker {
+  min-width: 255px;
+  min-height: 48px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include borderRadiusLight;
+  outline: none;
+  border: 0;
+  @include transition;
+  padding: 5px 15px;
+  @include fontSize(md);
+  color: inherit;
+  font-family: inherit;
+
+  &_focused {
+    border: 1px solid $colorPrimary;
+  }
+
+  &_blured {
+    border: 1px solid $colorGray;
+  }
+}

@@ -1,0 +1,45 @@
+.Button {
+  outline: none;
+  border: 0;
+  padding: 1rem 4.5rem;
+  border-radius: 2rem;
+  
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.75rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.Button:hover {
+  transform: translateY(-2px);
+}
+
+.Button:active {
+  transform: translateY(2px);
+}
+
+.danger {
+  background-color: #ca212e;
+}
+
+.danger:hover {
+  background-color: #e03e4a;
+}
+
+.danger:active {
+  background-color: #9a131d;
+}
+
+.primary {
+  background-color: #0461ec;
+}
+
+.primary:hover {
+  background-color: #4384e6;
+}
+
+.primary:active {
+  background-color: #071d6d;
+}

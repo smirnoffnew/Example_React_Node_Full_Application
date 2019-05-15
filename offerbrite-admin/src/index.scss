@@ -1,0 +1,105 @@
+@import './resources.scss';
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(xxl) {
+    font-size: 87.5%;
+  }
+
+  @include respond(xl) {
+    font-size: 82.5%;
+  }
+
+  @include respond(lg) {
+    font-size: 75%;
+  }
+
+  @include respond(md) {
+    font-size: 67.5%;
+  }
+
+  @include respond(sm) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: $colorGrayLight;
+  color: $colorGrayDark;
+  width: 100%;
+}
+
+::selection {
+  background-color: $colorPrimaryMedium;
+  color: $colorWhite;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $colorPrimaryMedium; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $colorPrimary; 
+}
+
+// GLOBAL REACT-TABLE COMPONENT CUSTOMIZATION
+:global .ReactTable .rt-table, .ReactTable .rt-tbody {
+  overflow: visible;
+}
+
+:global .ReactTable .rt-thead.-header {
+  box-shadow: none;
+}
+
+:global .ReactTable .rt-td {
+  padding: 1.25rem 1.5rem;
+  background-color: $colorWhite;
+  @include fontSize(md);
+  border-right: 0;
+}
+
+:global .ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  @include fontSize(md);
+}
+
+:global .ReactTable .rt-tbody .rt-td {
+  border-right: 0;
+}
+
+:global .ReactTable .rt-th, .ReactTable .rt-td {
+  overflow: visible;
+}
+
+:global .Table__cell__header {
+  background-color: $colorGrayLight;
+  box-shadow: none;
+}
+
+:global .search_highlight {
+  background-color: yellow;
+}

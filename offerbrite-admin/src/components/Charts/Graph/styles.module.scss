@@ -1,0 +1,42 @@
+@import '../../../resources.scss';
+
+.Chart {
+  width: 70%;
+  min-width: $graphMinWidth;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 550px;
+  @include backgroundWhite;
+  @include borderLight;
+  @include borderRadius;
+
+  @include respond(lgm) {
+    width: 100%;
+  }
+
+  &__header {
+    @include fullWidthWithMin($graphMinWidth);
+    @include flexBetweenCenter;
+    @include graphPadding;
+    padding-right: 45px;
+  }
+
+  &__header__text {
+    @include graphHeaderFont;
+  }
+
+  &__container {
+    width: 70%;
+    height: 100%;
+  }
+
+  &__data {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include graphPadding;
+    border-left: 1px solid $colorGray;
+  }
+}

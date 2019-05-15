@@ -1,0 +1,50 @@
+.Modal {
+  position: fixed;
+  z-index: 500;
+  width: 80%;
+  left: 10%;
+  top: 2.5%;
+  color: #fff;
+  text-shadow: 0 1px 2px #232323;
+  font-weight: 900;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-out;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, .5);
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)),
+    url(../../assets/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-height: 500px) {
+  .Modal {
+    top: 5%;
+  }
+}
+
+@media (min-width: 700px) and (min-height: 700px) {
+  .Modal {
+    width: 50%;
+    left: 25%;
+  }
+}
+
+.Modal__message {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.Modal__button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.Modal__link {
+  color: #fff;
+  text-decoration: none;
+}

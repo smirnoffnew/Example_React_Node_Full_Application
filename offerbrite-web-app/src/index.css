@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+/* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+@media (min-width: 650px) {
+  html { font-size: 75%; }
+}
+
+@media (min-width: 768px) {
+  html { font-size: 87.5%; }
+}
+
+@media (min-width: 1024px) {
+  html { font-size: 100%; }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #232323;
+}
+
+:global .container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}

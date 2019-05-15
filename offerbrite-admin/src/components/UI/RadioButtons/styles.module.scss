@@ -1,0 +1,21 @@
+@import '../../../resources.scss';
+
+.RadioButtons {
+  display: flex;
+  flex-direction: column;
+  @include fontSize(lg);
+  
+  &__button {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+
+  }
+
+  &__icon {
+    color: $colorPrimaryMedium;
+    @include fontSize(xl);
+    margin-right: 1rem;
+  }
+}

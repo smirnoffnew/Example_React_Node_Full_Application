@@ -1,0 +1,40 @@
+@import '../../../resources.scss';
+
+.Table {
+  display: flex;
+  @include backgroundWhite;
+  @include borderRadiusLight;
+  
+  &__column {
+    flex: 1;
+    @include borderLight;
+    
+    &:first-of-type {
+      border-top-left-radius: 4px;
+    }
+    
+    &:last-of-type {
+      border-top-right-radius: 4px;
+    }
+  }
+  
+  &__column__header {
+    background-color: $colorGrayLight;
+    border-bottom: 1px solid $colorGray;
+    font-size: 1.75rem;
+    padding: 1.5rem 3.5rem;
+    margin-bottom: 10px;
+
+    &:first-of-type {
+      border-top-left-radius: 4px;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 4px;
+    }
+  }
+  
+  &__column__cell {
+    padding: 1rem 3.5rem;
+  }
+}

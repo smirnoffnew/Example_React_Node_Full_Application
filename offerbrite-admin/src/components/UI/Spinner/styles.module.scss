@@ -1,0 +1,30 @@
+@import '../../../resources.scss';
+
+.Spinner {
+  @include circle(3rem);
+  border-top: 5px solid $colorPrimaryMedium;
+  border-bottom: 5px solid $colorPrimaryMedium;
+  border-right: 5px solid $colorGray;
+  border-left: 5px solid $colorGray;
+  animation: spin 1.5s forwards linear infinite;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    @include fullSize;
+    @include flexCenter;
+    background-color: rgba($colorWhite, 0.5);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

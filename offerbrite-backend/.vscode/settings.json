@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "__error": "Not found",
+    ".istanbul.yml": true,
+    "logs": true
+  }
+}

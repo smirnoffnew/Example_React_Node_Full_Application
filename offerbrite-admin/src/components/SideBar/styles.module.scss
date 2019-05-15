@@ -1,0 +1,43 @@
+@import '../../resources.scss';
+
+.SideBar {
+  min-height: 100vh;
+  background-color: $colorPrimary;
+  @include transition;
+
+  &__header {
+    padding: 10px 13%;
+    @include flexCenter;
+    min-height: 74px;
+  }
+
+  &__header__logo {
+    margin-right: 20px;
+  }
+
+  &__header__title {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: $colorWhite;
+    letter-spacing: 3px;
+    white-space: nowrap;
+  }
+
+  &__header__button {
+    margin-top: 15px;
+  }
+
+  &__navigation {
+    margin-top: 4rem;
+  }
+}
+
+.hidden {
+  width: 4%;
+  min-width: 60px;
+}
+
+.visible {
+  width: 13%;
+  min-width: 260px;
+}

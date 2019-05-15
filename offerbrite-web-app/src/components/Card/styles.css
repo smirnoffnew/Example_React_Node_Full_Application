@@ -1,0 +1,24 @@
+.Card {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 650px) {
+  .Card { width: 75%; }
+}
+
+@media (min-width: 768px) {
+  .Card { width: 60%; }
+}
+
+@media (min-width: 1024px) {
+  .Card { width: 50%; }
+}
+
+@media (min-width: 1280px) {
+  .Card { width: 40%; }
+}

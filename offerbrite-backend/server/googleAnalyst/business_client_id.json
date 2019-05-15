@@ -1,0 +1,18 @@
+{
+    "web": {
+        "client_id": "708923459594-7p1grkoni3m9sq4runu4q9ln2abo3e71.apps.googleusercontent.com",
+        "project_id": "offerbrite-216205",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://www.googleapis.com/oauth2/v3/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret": "NtX5iACbkV-4rEa2yvIDia3T",
+        "redirect_uris": [
+            "https://offerbrite-216205.firebaseapp.com/__/auth/handler"
+        ],
+        "javascript_origins": [
+            "http://localhost",
+            "http://localhost:5000",
+            "https://offerbrite-216205.firebaseapp.com"
+        ]
+    }
+}

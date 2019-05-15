@@ -1,0 +1,41 @@
+@import '../../resources.scss';
+
+.NavItem {
+
+  &__button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 80px;
+    
+    &:hover {
+      background-color: $colorPrimaryMedium;
+    }
+  }
+  
+  &__icon__wrapper {
+    position: relative;
+  }
+
+  &__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    &__badge {
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      z-index: 3;
+    }
+  }
+
+  &__title {
+    margin-left: 1.5rem;
+    color: $colorWhite;
+    @include fontSize(lg);
+  }
+}
+
+.active {
+  background-color: $colorPrimaryMedium;
+}

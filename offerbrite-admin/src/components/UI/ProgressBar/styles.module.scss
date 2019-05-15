@@ -1,0 +1,50 @@
+@import '../../../resources.scss';
+
+.ProgressBar {
+  @include flexBetweenCenter;
+  padding: 15px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $colorGray;
+  }
+
+  &__label {
+    flex: 2;
+    text-align: center;
+    @include fontSize(md);
+  }
+
+  &__tooltip {
+    padding: 2rem;
+    box-shadow: 0.1rem 0.4rem 1rem rgba(0,0,0,0.1), -0.1rem -0.1rem 1rem rgba(0,0,0,0.1);
+    height: 100%;
+    border-radius: 10px;
+    @include backgroundWhite;
+    color: inherit;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1.3rem;
+      height: 1.3rem;
+      transform: translateY(-70%) rotate(45deg);
+      @include backgroundWhite;
+    }
+  }
+
+  &__bar {
+    flex: 6;
+    cursor: pointer;
+
+    &__symbol {
+      display: none;
+    }
+  }
+
+  &__description {
+    flex: 2;
+    text-align: center;
+    @include fontSize(lg);
+  }
+}

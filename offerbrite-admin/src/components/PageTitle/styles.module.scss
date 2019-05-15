@@ -1,0 +1,5 @@
+@import '../../resources.scss';
+
+.PageTitle {
+  @include fontSize(xxl);
+}

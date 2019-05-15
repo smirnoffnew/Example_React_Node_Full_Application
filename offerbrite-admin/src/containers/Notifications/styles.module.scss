@@ -1,0 +1,20 @@
+@import '../../resources.scss';
+
+.Notifications {
+
+  &__content {
+    margin-top: $contentMarginTop;
+  }
+
+  &__description {
+    max-width: 50rem;
+    color: $colorGrayMedium;
+    @include fontSize(md);
+    line-height: 1.75rem;
+    margin-bottom: $contentMarginTop;
+  }
+
+  &__table {
+    margin-top: $contentMarginTop;
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/chai, @types/express, @types/fs-extra, @types/mocha, @types/mongoose, @types/mongoose-paginate, @types/multer, @types/read-chunk, @types/request, @types/request-promise, @types/supertest, @types/supertest-as-promised, @types/url-parse}" />
+  </component>
+</project>

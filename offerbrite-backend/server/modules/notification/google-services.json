@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "708923459594",
+    "firebase_url": "https://offerbrite-216205.firebaseio.com",
+    "project_id": "offerbrite-216205",
+    "storage_bucket": "offerbrite-216205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708923459594:android:f72d40794ac9a787",
+        "android_client_info": {
+          "package_name": "com.offerbrite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708923459594-7p1grkoni3m9sq4runu4q9ln2abo3e71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd5lRgrb2GRGRSpXnES9CDdXk6CwgZeeY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

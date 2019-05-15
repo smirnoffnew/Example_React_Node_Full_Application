@@ -1,0 +1,40 @@
+@import '../../resources.scss';
+
+.Login {
+  &__logo {
+    margin-top: 2.5rem;
+    flex-direction: column;
+    @include flexCenter;
+  }
+
+  &__header {
+    color: $colorPrimary;
+    text-transform: uppercase;
+    @include fontSize(md);
+    letter-spacing: 4px;
+    margin-top: -20px;
+  }
+
+  &__form {
+    margin: 3rem auto;
+    padding: 3rem 0;
+    width: 30%;
+    min-width: 320px;
+    @include backgroundWhite;
+    @include borderRadiusLight;
+    flex-direction: column;
+    @include flexCenter;
+    box-shadow: 0 0.5rem 0.5rem rgba($colorGray, 0.5);
+  }
+
+  &__form__checkbox {
+    width: 255px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__form__button {
+    width: 255px;
+  }
+
+}

@@ -1,0 +1,20 @@
+@import '../../../resources.scss';
+
+.Chart {
+  width: 70%;
+  min-width: $graphMinWidth;
+  margin-top: $contentMarginTop;
+  @include backgroundWhite;
+  @include borderLight;
+  @include borderRadius;
+  @include graphPadding;
+
+  &__header {
+    @include fullWidthWithMin($graphMinWidth);
+    @include flexBetweenCenter;
+  }
+
+  &__header__text {
+    @include graphHeaderFont;
+  }
+}

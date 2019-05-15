@@ -1,0 +1,22 @@
+@import '../../../resources.scss';
+
+.NotificationForm {
+  @include backgroundWhite;
+
+  &__form {
+    width: 580px;
+  }
+
+  &__dropdowns {
+    @include flexBetweenCenter;
+  }
+
+  &__pickers {
+    @include flexBetweenCenter;
+  }
+
+  &__form__button {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}

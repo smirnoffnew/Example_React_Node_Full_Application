@@ -1,0 +1,13 @@
+@import '../../../resources.scss';
+
+.UserForm {
+  @include backgroundWhite;
+
+  &__header {
+    background-color: $colorGray;
+  }
+
+  &__form {
+    padding: 1.5rem;
+  }
+}

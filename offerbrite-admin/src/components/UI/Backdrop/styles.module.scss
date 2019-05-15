@@ -1,0 +1,10 @@
+@import '../../../resources.scss';
+
+.Backdrop {
+  @include fullSize;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  background-color: rgba($colorBlack, 0.7);
+}

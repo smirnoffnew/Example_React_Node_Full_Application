@@ -1,0 +1,19 @@
+{
+  "admin/main.css": "/admin/static/css/main.e189b4ca.chunk.css",
+  "admin/main.js": "/admin/static/js/main.3b90b367.chunk.js",
+  "admin/main.js.map": "/admin/static/js/main.3b90b367.chunk.js.map",
+  "admin/static/css/1.d94636a4.chunk.css": "/admin/static/css/1.d94636a4.chunk.css",
+  "admin/static/js/1.df1b79b1.chunk.js": "/admin/static/js/1.df1b79b1.chunk.js",
+  "admin/static/js/1.df1b79b1.chunk.js.map": "/admin/static/js/1.df1b79b1.chunk.js.map",
+  "admin/runtime~main.js": "/admin/static/js/runtime~main.229c360f.js",
+  "admin/runtime~main.js.map": "/admin/static/js/runtime~main.229c360f.js.map",
+  "admin/static/media/arrow-down.svg": "/admin/static/media/arrow-down.d81dcaa9.svg",
+  "admin/static/media/logo-blue.svg": "/admin/static/media/logo-blue.9bbd6a72.svg",
+  "admin/static/media/question-mark.png": "/admin/static/media/question-mark.b9e22752.png",
+  "admin/static/media/logo.svg": "/admin/static/media/logo.d4efa7ad.svg",
+  "admin/static/css/1.d94636a4.chunk.css.map": "/admin/static/css/1.d94636a4.chunk.css.map",
+  "admin/static/css/main.e189b4ca.chunk.css.map": "/admin/static/css/main.e189b4ca.chunk.css.map",
+  "admin/index.html": "/admin/index.html",
+  "admin/precache-manifest.5c6704f8e61398de111a1c2d8e41b8d1.js": "/admin/precache-manifest.5c6704f8e61398de111a1c2d8e41b8d1.js",
+  "admin/service-worker.js": "/admin/service-worker.js"
+}

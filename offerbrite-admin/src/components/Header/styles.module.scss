@@ -1,0 +1,43 @@
+@import '../../resources.scss';
+
+.Header {
+  padding-right: 48px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  height: 7rem;
+  position: relative;
+
+  &__dropdown {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: $sidePaddingLarge;
+    z-index: 3;
+  }
+
+  &__dropdown__row {
+    width: 14.5rem;
+    flex-direction: row;
+    @include flexBetweenCenter;
+    padding: 1.5rem 2.5rem;
+    @include borderLight;
+    @include borderRadiusLight;
+    @include transition;
+    background-color: $colorGrayLight;
+
+    &:first-of-type {
+      position: relative;
+      z-index: 5;
+    }
+
+    &:hover {
+      background-color: $colorGray;
+    }
+
+    &__hidden {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+}

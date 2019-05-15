@@ -1,0 +1,38 @@
+@import '../../../resources.scss';
+
+.Table {
+  width: 28%;
+  min-width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include backgroundWhite;
+  @include borderLight;
+  @include borderRadius;
+
+  @include respond(lgm) {
+    margin-top: $contentMarginTop;
+  }
+
+  &__header {
+    @include fullWidthWithMin(400px);
+    @include flexBetweenCenter;
+    @include graphPadding;
+  }
+
+  &__header__text {
+    @include graphHeaderFont;
+  }
+
+  &__data {
+    overflow-y: scroll;
+    flex: 1;
+    padding: 0 20px;
+
+    &__icon {
+      color: $colorGray;
+      font-size: 3rem;
+    }
+  }
+}

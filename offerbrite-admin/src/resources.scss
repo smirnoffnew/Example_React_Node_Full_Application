@@ -1,0 +1,160 @@
+//////////
+// COLORS
+//////////
+$colorPrimary: #0461ec;
+$colorPrimaryMedium: #2f82ff;
+$colorPrimaryLight: #d5e8ff;
+$colorSecondary: #ff9518;
+$colorSecondaryMedium: #f6a03e;
+$colorSecondaryLight: #f5af5e;
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorGrayDark: #474747;
+$colorGrayMedium: #818181;
+$colorGray: #dbdbdb;
+$colorGrayLight: #f5f5f7;
+$colorPink: #e8475f;
+$colorGreen: #0f9d58;
+
+$sidePaddingSmall: 3rem;
+$sidePaddingLarge: 4.5rem;
+
+$contentMarginTop: 2rem;
+$graphMinWidth: 650px;
+
+//////////
+// CUSTOMIZATION OF HAMBURGER BUTTON
+/////////
+$hamburger-padding-x: 15px;
+$hamburger-padding-y: 15px;
+$hamburger-layer-width: 40px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 6px;
+$hamburger-layer-color: #fff;
+$hamburger-layer-border-radius: 4px;
+$hamburger-hover-opacity: 0.7;
+$hamburger-active-layer-color: $hamburger-layer-color;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+
+@mixin backgroundWhite {
+  background-color: $colorWhite;
+}
+
+@mixin borderRadius {
+  border-radius: 5px;
+}
+
+@mixin borderRadiusLight {
+  border-radius: 4px;
+}
+
+@mixin borderLight {
+  border: 1px solid $colorGray;
+}
+
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+@mixin graphHeaderFont {
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+@mixin graphPadding {
+  padding: 10px 20px;
+}
+
+@mixin transition {
+  transition: all 0.2s;
+}
+
+@mixin flexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fullSize {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin fullWidthWithMin($minWidth) {
+  width: 100%;
+  min-width: $minWidth;
+}
+
+///////////////////////
+// FONT-SIZE MANAGER
+///////////////////////
+@mixin fontSize($size) {
+  @if $size == xs {
+    font-size: 0.75rem;
+  }
+  @if $size == sm {
+    font-size: 1rem;
+  }
+  @if $size == md {
+    font-size: 1.25rem;
+  }
+  @if $size == lg {
+    font-size: 1.5rem;
+  }
+  @if $size == xl {
+    font-size: 2rem;
+  }
+  @if $size == xxl {
+    font-size: 2.5rem;
+  }
+}
+
+
+///////////////////////
+// MEDIA QUERY MANAGER
+///////////////////////
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs {
+    @media only screen and (max-width: 550px) {
+      @content;
+    }
+  }
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lgm {
+    @media only screen and (max-width: 1600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media only screen and (max-width: 1920px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xxl {
+    @media only screen and (min-width: 1921px) {
+      @content;
+    }
+  }
+}

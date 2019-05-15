@@ -1,0 +1,12 @@
+@import '../../../resources.scss';
+
+.TextWithTooltip {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    color: $colorGray;
+    margin-left: 0.7rem;
+    @include fontSize(xl);
+  }
+}

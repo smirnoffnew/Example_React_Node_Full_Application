@@ -1,0 +1,17 @@
+import createTypes from '@/services/helpers/createTypes';
+
+export default createTypes(`
+  GET_OFFERS_START
+  GET_OFFERS_SUCCESS
+  GET_OFFERS_FAIL
+
+  GET_PAST_OFFERS_START
+  GET_PAST_OFFERS_SUCCESS
+  GET_PAST_OFFERS_FAIL
+
+  DELETE_OFFER_START
+  DELETE_OFFER_SUCCESS
+  DELETE_OFFER_FAIL
+
+  ON_REFRESH
+`);

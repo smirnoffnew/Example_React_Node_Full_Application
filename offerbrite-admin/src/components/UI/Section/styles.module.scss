@@ -1,0 +1,12 @@
+@import '../../../resources.scss';
+
+.Section {
+  padding: 18px 22px;
+  border-bottom: 1px solid $colorGray;
+
+  &__header {
+    margin-bottom: 1rem;
+    @include fontSize(sm);
+    font-weight: normal;
+  }
+}

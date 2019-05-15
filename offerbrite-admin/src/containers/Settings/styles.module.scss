@@ -1,0 +1,12 @@
+@import '../../resources.scss';
+
+.Settings {
+  &__content {
+    padding-left: $sidePaddingSmall;
+    padding-right: $sidePaddingLarge;
+  }
+
+  &__content__button {
+    margin-top: $contentMarginTop;
+  }
+}

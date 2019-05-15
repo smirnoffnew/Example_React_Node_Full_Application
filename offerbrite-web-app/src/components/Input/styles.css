@@ -1,0 +1,57 @@
+.Input {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.Input__label {
+  display: block;
+  text-align: left;
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.Input__box {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.Input__box_onFocus_danger {
+  border-bottom: 2px solid #ca212e;
+}
+
+.Input__box_onFocus_primary {
+  border-bottom: 2px solid #0461ec;
+}
+
+.Input__box_onBlur {
+  border-bottom: 2px solid #777;
+}
+
+.Input__box__element {
+  flex: 9;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.Input__box__icon__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.Input__box__icon__image {
+  width: 60%;
+}
+
+.Input__error {
+  min-height: 3rem;
+  margin: .5rem 0;
+  text-align: left;
+  font-size: 1rem;
+  color: #ca212e;
+}

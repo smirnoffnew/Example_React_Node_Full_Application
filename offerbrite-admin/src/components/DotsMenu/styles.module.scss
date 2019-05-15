@@ -1,0 +1,87 @@
+@import '../../resources.scss';
+
+.DotsMenu {
+  width: 2rem;
+  height: 100%;
+  max-height: 2rem;
+  position: relative;
+
+  &__dots {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    &__dot {
+      @include circle(5px);
+    }
+
+    &__dot_active {
+      background-color: $colorPrimary;
+    }
+
+    &__dot_inactive {
+      background-color: $colorGrayMedium;
+    }
+  }
+  
+  &__menu {
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    right: -1rem;
+    box-shadow: 0 1rem 2rem $colorGray, 0 -0.5rem 2rem $colorGray;
+    border-radius: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.4rem;
+      right: 1.5rem;
+      z-index: -1;
+      width: 1rem;
+      height: 1rem;
+      transform: rotate(45deg);
+      @include backgroundWhite;
+    }
+
+    &__item {
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-content: center;
+      color: $colorPrimary;
+      background-color: $colorWhite;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:first-child {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      &:hover {
+        background-color: $colorGrayLight;
+      }
+
+      &:active {
+        background-color: $colorGray;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $colorGray;
+      }
+    }
+
+    &__item__icon {
+      margin-right: 1rem;
+      @include fontSize(lg);
+    }
+  }
+}

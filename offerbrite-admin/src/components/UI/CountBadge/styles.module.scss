@@ -1,0 +1,9 @@
+@import '../../../resources.scss';
+
+.CountBadge {
+  background-color: #EE6B6B;
+  @include circle(1.25rem);
+  @include flexCenter;
+  color: $colorWhite;
+  @include fontSize(xs);
+}

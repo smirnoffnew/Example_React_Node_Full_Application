@@ -1,0 +1,12 @@
+@import '../../../resources.scss';
+
+.Tooltip {
+  @include backgroundWhite;
+  @include borderLight;
+  padding: 12px;
+
+  &__value {
+    margin-top: 5px;
+    color: $colorSecondary;
+  }
+}

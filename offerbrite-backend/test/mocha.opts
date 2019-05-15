@@ -1,0 +1,7 @@
+-R spec
+--ui bdd
+--colors
+--recursive
+--exit
+--require mocha-clean
+--timeout 10000

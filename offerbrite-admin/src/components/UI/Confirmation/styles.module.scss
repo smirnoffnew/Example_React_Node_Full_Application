@@ -1,0 +1,39 @@
+@import '../../../resources.scss';
+
+.Confirmation {
+  width: 100%;
+  @include flexBetweenCenter;
+  @include backgroundWhite;
+  padding: 2.5rem 1.5rem 1.5rem;
+
+  &__button {
+    width: 100px;
+    padding: 1.5rem;
+    @include borderRadiusLight;
+    @include transition;
+    outline: none;
+    @include borderLight;
+    color: $colorGrayDark;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__button_left {
+    &:hover {
+      border: 1px solid $colorPrimaryMedium;
+      @include backgroundWhite;
+      color: $colorPrimaryMedium;
+    }
+  }
+
+  &__button_right {
+    &:hover {
+      border: 1px solid $colorPink;
+      @include backgroundWhite;
+      color: $colorPink;
+    }
+  }
+}

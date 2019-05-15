@@ -1,0 +1,9 @@
+@import '../../../resources.scss';
+
+.TabBar {
+  display: flex;
+  width: calc(100% + #{$sidePaddingLarge} + #{$sidePaddingSmall});
+  border-bottom: 1px solid $colorGray;
+  padding-left: $sidePaddingSmall;
+  margin: 4rem (-$sidePaddingLarge) 2rem (-$sidePaddingSmall);
+}

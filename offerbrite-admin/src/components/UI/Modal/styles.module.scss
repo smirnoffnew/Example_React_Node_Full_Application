@@ -1,0 +1,36 @@
+@import '../../../resources.scss';
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2000;
+  transform: translate(-50%, -50%);
+  @include borderRadiusLight;
+
+  &__header {
+    background-color: $colorGrayLight;
+    @include flexBetweenCenter;
+    border-bottom: 1px solid $colorGray;
+  }
+
+  &__header__text {
+    padding: 1rem 1.5rem;
+    @include fontSize(md);
+  }
+
+  &__header__closeBtn {
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      background-color: $colorGray;
+    }
+    
+    &__button {
+      color: $colorPrimary;
+      @include fontSize(xl);
+    }
+  }
+}

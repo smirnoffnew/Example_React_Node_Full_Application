@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/mongoose" level="application" />
+    <orderEntry type="library" name="@types/mocha" level="application" />
+    <orderEntry type="library" name="@types/chai" level="application" />
+    <orderEntry type="library" name="@types/request" level="application" />
+    <orderEntry type="library" name="@types/request-promise" level="application" />
+    <orderEntry type="library" name="@types/mongoose-paginate" level="application" />
+    <orderEntry type="library" name="@types/express" level="application" />
+    <orderEntry type="library" name="@types/multer" level="application" />
+    <orderEntry type="library" name="@types/supertest" level="application" />
+    <orderEntry type="library" name="@types/supertest-as-promised" level="application" />
+    <orderEntry type="library" name="@types/fs-extra" level="application" />
+    <orderEntry type="library" name="@types/read-chunk" level="application" />
+    <orderEntry type="library" name="@types/url-parse" level="application" />
+  </component>
+</module>
